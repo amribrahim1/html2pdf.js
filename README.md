@@ -1,6 +1,10 @@
+This's a fork of [html2pdf.js](https://github.com/eKoopmans/html2pdf.js)
+- Fixes
+- Replace `html2canvas` with `html2canvas-pro`
+
 # html2pdf.js
 
-html2pdf.js converts any webpage or element into a printable PDF entirely client-side using [html2canvas](https://github.com/niklasvh/html2canvas) and [jsPDF](https://github.com/MrRio/jsPDF).
+html2pdf.js converts any webpage or element into a printable PDF entirely client-side using [html2canvas-pro](https://github.com/yorickshan/html2canvas-pro) and [jsPDF](https://github.com/MrRio/jsPDF).
 
 ## Table of contents
 
@@ -36,7 +40,7 @@ html2pdf.js converts any webpage or element into a printable PDF entirely client
 The simplest way to use html2pdf.js is to include it as a script in your HTML by using cdnjs:
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.12.1/html2pdf.bundle.min.js" integrity="sha512-D25Z8/1q2z65ZpJ3NzY6XiPZfwjhbv34OTQHDIZd+KPK+uWCovGt+fMkSzW8ArzCMFUgZt6Cdu7qoXNuy6a2GA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
 Using a CDN URL will lock you to a specific version, which should ensure stability and give you control over when to change versions. cdnjs gives you access to [all past versions of html2pdf.js](https://cdnjs.com/libraries/html2pdf.js).
@@ -74,7 +78,7 @@ If you're on a webpage that you can't modify directly and wish to use html2pdf.j
         script.src = url;
         document.head.appendChild(script);
     }
-    addScript('https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js');
+    addScript('https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.12.1/html2pdf.bundle.min.js');
     ```
 3. You may now execute html2pdf.js commands directly from the console. To capture a default PDF of the entire page, use `html2pdf(document.body)`.
 

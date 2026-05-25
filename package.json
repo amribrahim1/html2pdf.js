@@ -1,7 +1,7 @@
 {
-  "name": "html2pdf.js",
-  "version": "0.14.0",
-  "description": "Client-side HTML-to-PDF rendering using pure JS",
+  "name": "@amreraky/html2pdf.js",
+  "version": "1.0.0",
+  "description": "Client-side HTML-to-PDF rendering using pure JS (forked from html2pdf.js)",
   "main": "dist/html2pdf.js",
   "types": "./type.d.ts",
   "files": [
@@ -9,7 +9,7 @@
     "/dist",
     "./type.d.ts"
   ],
-  "repository": "git@github.com:eKoopmans/html2pdf.js.git",
+  "repository": "git@github.com:amribrahim1/html2pdf.js.git",
   "keywords": [
     "javascript",
     "pdf-generation",
@@ -18,43 +18,43 @@
     "canvas"
   ],
   "author": {
-    "name": "Erik Koopmans",
-    "email": "erik@erik-koopmans.com",
-    "url": "https://www.erik-koopmans.com"
+    "name": "Amr Eraky",
+    "email": "amribrahim11@gmail.com",
+    "url": "https://amr-eraky.web.app"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eKoopmans/html2pdf.js/issues"
+    "url": "https://github.com/amribrahim1/html2pdf.js/issues"
   },
-  "homepage": "https://ekoopmans.github.io/html2pdf.js/",
+  "homepage": "https://amribrahim1.github.io/html2pdf.js/",
   "dependencies": {
-    "dompurify": "^3.3.1",
-    "html2canvas": "^1.0.0",
-    "jspdf": "^4.0.0"
+    "dompurify": "^3.4.5",
+    "html2canvas-pro": "^2.0.3",
+    "jspdf": "^4.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
-    "@brightspace-ui/core": "^3.156.4",
-    "@brightspace-ui/testing": "^1.31.2",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.5",
+    "@brightspace-ui/core": "^3.253.3",
+    "@brightspace-ui/testing": "^1.45.0",
     "@web/dev-server": "^0.4.6",
-    "babel-loader": "^10.0.0",
+    "babel-loader": "^10.1.1",
     "bootstrap": "^5.3.8",
-    "core-js": "^3.16.0",
+    "core-js": "^3.49.0",
     "json5": "^2.2.3",
-    "lit": "^3.3.1",
-    "pdfjs-dist": "^5.3.93",
-    "rimraf": "^6.0.1",
-    "sinon": "^21.0.0",
+    "lit": "^3.3.3",
+    "pdfjs-dist": "^5.7.284",
+    "rimraf": "^6.1.3",
+    "sinon": "^22.0.0",
     "vue": "^2.7.16",
-    "webpack": "^5.101.0",
-    "webpack-bundle-analyzer": "^4.4.2",
-    "webpack-cli": "^6.0.1"
+    "webpack": "^5.107.1",
+    "webpack-bundle-analyzer": "^5.3.0",
+    "webpack-cli": "^7.0.2"
   },
   "scripts": {
     "build": "npm run clean && webpack --env=prod",
     "build:analyze": "npm run clean && webpack --env=prod --env=analyzer",
-    "clean": "rimraf dist/*",
+    "clean": "rimraf dist",
     "dev": "webpack --env=dev",
     "dev:analyze": "webpack --env=dev --env=analyzer",
     "start": "web-dev-server --open demo/ --node-resolve --watch",
